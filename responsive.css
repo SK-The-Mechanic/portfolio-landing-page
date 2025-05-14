@@ -1,0 +1,46 @@
+@media (max-width: 783px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 33%;
+        height: 32vh;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #tag-line button {
+        height: 5vh;
+        width: 33vw;
+        font-size: 2.3vh;
+    }
+
+    #tag-line-text {
+        font-size: 2.5vh;
+    }
+}
+
+
+/* #torch {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.85) 70%);
+    mix-blend-mode: lighten;
+} */

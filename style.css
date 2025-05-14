@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url('main.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* warm beige */
+    /* background: linear-gradient(160deg, #e2c290, #fdf6e3); */
+    /* soft amber */
+    /* background: linear-gradient(145deg, #d6ad60, #f8e3b9);  */
+    /* Golden Sand */
+    /* background: linear-gradient(120deg, #f3e9d2, #ddb892); */
+}
+
+nav {
+    height: 8vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(0, 0, 0, 0.4); */
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: wheat;
+}
+
+#logo {
+    font-size: 3.9vh;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+nav li {
+    margin: 2.5vw;
+    height: 3vh;
+    width: 5.5vw;
+    border-radius: 15px;
+    transition: all 1.5s ease;
+}
+
+#tag-line {
+    height: 82vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#tag-line p {
+    font-size: 5vh;
+    font-weight: 700;
+    background: linear-gradient(to right, #f3e9d2, #d99149, #f3e9d2);
+    background-size: 200% auto;
+    background-position: 0% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-text 3s linear infinite;
+}
+
+@keyframes animate-text {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+h6 {
+    color: wheat;
+    font-size: 2.5vh;
+}
+
+#tag-line-text {
+    font-size: 4.5vh;
+    font-weight: 700;
+    background: linear-gradient(to right, #f3e9d2, #d99149, #f3e9d2);
+    background-size: 200% auto;
+    background-position: 0% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-text 3s linear infinite;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#tag-line button {
+    outline: none;
+    font-weight: 500;
+    font-size: 2vh;
+    background: transparent;
+    border: 2px solid wheat;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 3vh 0 0 0;
+    height: 5vh;
+    width: 9vw;
+    background: linear-gradient(to right, #f3e9d2, #d99149, #f3e9d2);
+    background-size: 200% auto;
+    background-position: 0% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-text 3s linear infinite;
+}
+
+#tag-line button:hover {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    font-size: 5vh;
+    color: wheat;
+    cursor: pointer;
+}
+
+nav li:hover{
+    background: black;
+}
